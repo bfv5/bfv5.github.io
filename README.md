@@ -1,3 +1,5 @@
+改的别人的模板，目的只是单纯的嘴臭，极致的享受罢了
+
 [DEMO](https://tsjensen.github.io/fuse-core/)
 
 # Fuse Core
