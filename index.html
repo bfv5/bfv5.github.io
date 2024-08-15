@@ -1,0 +1,90 @@
+---
+permalink: /
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if site.title %}{{ site.title }}{% else %}{{ site.name }}{% endif %}</title>
+    <meta name="JekyllTheme" content="Fuse Core by Thomas Jensen" />
+    {% if site.robots.description %}<meta name="Description" content="{{ site.robots.description }}" />{% endif %}
+    {% if site.robots.keywords %}<meta name="Keywords" content="{{ site.robots.keywords }}" />{% endif %}
+    {% if site.robots.crawl %}<meta name="Robots" content="{{ site.robots.crawl }}" />{% endif %}
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if site.url %}<link rel="canonical" href="{{ site.url }}">{% endif %}
+    {% include analytics.html %}
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.baseurl }}/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="{{ site.baseurl }}/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
+    {%- comment -%} Bootstrap should be the first stylesheet {%- endcomment %}
+    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
+          href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/theme.css">
+    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"> 
+
+
+</head>
+<body class="fullscreen-background">
+
+<div class="glass-pane">
+<div class="container fuse-core-content pb-4">
+
+<div class="row pt-sm-4">
+    <div class="col text-center"><img id="avatar" class="my-3 my-sm-4" alt="{{ site.name }}"
+        src="{% if site.avatar %}{% if site.avatar contains '://' %}{{ site.avatar }}{%
+        else %}{{ site.baseurl }}/{{ site.avatar }}{% endif %}{%
+        else %}{{ site.baseurl }}/images/avatar.svg{% endif %}"></div>
+</div>
+<div class="row">
+    <div class="col">
+        <h1 class="text-center fw-bold">{{ site.name }}</h1>
+        {% if site.subtitle %}<h3 class="text-center fw-light">{{ site.subtitle }}</h3>{% endif %}
+    </div>
+</div>
+
+<div class="row justify-content-center links pt-1 pt-sm-2">
+{% for hash in site.links %}{% for linkInfo in hash %}{% if linkInfo[1].show %}
+    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+        href="{{ linkInfo[1].href }}"{% if site.ga %}
+        onclick="trackOutboundLink('{{ linkInfo[1].name }}', '{{ linkInfo[1].href }}'); return false;"
+        {% endif %}><i class="{{ linkInfo[1].icon }} fa-fw"></i>
+        <span class="d-inline d-sm-none">{{ linkInfo[1].name }}</span></a></div>
+{% endif %}{% endfor %}{% endfor %}
+</div>
+
+
+
+{% if site.extra_html %}
+<div class="row justify-content-center">
+    <div class="col mt-3 text-sm-center fuse-core-extra">{{ site.extra_html }}</div>
+</div>
+{% endif %}
+</div>
+<div align="center"><font color="white"><p><b>我一个人骂的还不够脏，如果你有想骂的话可以发到我的邮箱，我会定时更新到网页上。</b></p>
+</div>
+<div align="center"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=488350603&auto=1&height=66"></iframe>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
