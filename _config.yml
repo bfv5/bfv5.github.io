@@ -17,7 +17,7 @@ name: 傻逼外挂
 subtitle: 不会吧？不会吧？打个游戏还要开挂？<br>你不会以为我也是卖挂的吧？
 
 # Title attribute of HTML Page, uses 'name' from above if empty
-title: 战地玩具城
+title: 战地玩具城-战地商城
 
 # Information for web crawlers / Google, all of them optional
 # 'description' and 'keywords' simply set the corresponding meta tags,
@@ -28,7 +28,7 @@ robots:
     crawl: index,follow
 
 # website address when deployed, also given as canonical link
-url: https://tsjensen.github.io/fuse-core/
+url: https://www.bfv5.store/
 
 # The 'baseurl' is prepended to all website-internal links.
 # 'baseurl' will often be '', but for a project page on gh-pages, it needs to be the project name.
