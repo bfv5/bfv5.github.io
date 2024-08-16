@@ -76,10 +76,41 @@ permalink: /
 {% endif %}
 </div>
 
-</div>
+<div>
 <div align="center"><font color="white"><p><b>我一个人骂的还不够脏，如果你有想骂的话可以发到我的邮箱，我会定时更新到网页上。</b></p>
 <div align="center"><font color="white"><p>如果你想在内容后面加上署名，也请在邮件里告诉我，但是请不要出现人名</p>
-<div align="center"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=488350603&auto=1&height=32"></iframe>
+</div>
+<div>
+<!-- 为博客底部添加音乐组件 -->
+<div id="player"  class="aplayer"></div>
+<link href="/css/APlayer.min_v1.10.1.css" rel="stylesheet">
+<script src="/js/APlayer.min_v1.10.1.js"></script> 
+ 
+<script type="text/javascript">
+    var ap = new APlayer({
+        element: document.getElementById('player'),
+        narrow: false,
+        autoplay: true, 
+        showlrc: true, 
+        fixed: true,
+        theme: '#FFFFFF',  
+        music: [{
+                title: '<font color="black">孤儿乐园',
+                author: '小豆芽',
+                url: 'http://music.163.com/song/media/outer/url?id=488350603.mp3',
+                pic: 'https://p1.music.126.net/QRQ1ppPNjZj4u2yiDxMKuA==/17854969323881288.jpg?param=130y130',
+                lrc:"[00:00.000] 作词 : 佚名\n[00:01.000] 作曲 : 佚名\n[00:13.100]天上无云雨难下 地上无树哪有花\n[00:19.823]鱼儿没水活不了 那个孩子没有家\n[00:26.492]啊嘿嘿嘿嘿 啊哈哈哈哈\n[00:29.996]谁说我们没有家 谁说我们没有家\n[00:36.553]孤儿园中多温暖 先生爱我如爹妈\n[00:45.617]你们没有了爹和妈 你们每个都没有家\n[00:51.599]又无亲友帮助你 孤苦伶丁怕不怕\n[00:58.447]啊嘿嘿嘿嘿 啊哈哈哈哈\n[01:02.154]我们从来不害怕 我们从来不害怕\n[01:08.613]孤儿园中兄和妹 相亲相爱如一家\n[01:17.403]流眼泪 傻不傻\n[01:20.720]傻傻傻 傻傻傻\n[01:24.259]该不该 说大话\n[01:27.351]说大话 打嘴巴\n[01:30.705]不用功 傻不傻\n[01:34.698]傻傻傻 傻傻傻\n[01:37.448]读好书 干什么\n[01:40.812]为社会 为国家\n[01:44.487]啊啊啊\n[01:50.840]不怕艰难和困苦 自己努力就有办法\n[01:57.566]孤儿园中真快乐 相亲相爱如一家\n[02:19.844]啊嘿嘿嘿嘿 啊哈哈哈哈\n[02:23.094]我们从来不害怕 我们从来不害怕\n[02:29.612]孤儿园中兄和妹 相亲相爱如一家\n[02:38.290]流眼泪 傻不傻\n[02:41.598]傻傻傻 傻傻傻\n[02:45.326]该不该 说大话\n[02:48.749]说大话 打嘴巴\n[02:52.073]不用功 傻不傻\n[02:55.578]傻傻傻 傻傻傻\n[02:59.072]读好书 干什么\n[03:02.579]为社会 为国家\n[03:05.743]啊啊啊\n[03:12.224]不怕艰难和困苦 自己努力就有办法\n[03:18.419]孤儿园中真快乐 相亲相爱如一家\n[03:28.643]相亲相爱如一家\n"
+
+            }
+         ]
+    });
+
+</script>
+ 
+ 
+ 
+ 
+
 </div>
 
 
