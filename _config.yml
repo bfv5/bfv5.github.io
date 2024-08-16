@@ -163,10 +163,12 @@ links:
 # Extra HTML which will be displayed below the links. Keep it short. Leave empty to disable.
 #extra_html:
 extra_html: >
-    <ul>
-    <li><font color="white">信号弹打你家里就一个<font color="red"><b>红点</b><font color="white">哦</li>
-    </ul>
-
+    <div class="list">
+        <p>祝福语：</p>
+        <ul>
+        <li><font color="white">信号弹打你家里就一个<font color="red"><b>红点</b><font color="white">哦</li>
+        </ul>
+    </div>
 
 
 #EOF
